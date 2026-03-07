@@ -14,7 +14,7 @@
     2. ALS ☑️ spring2026
     3. SSBN 
     4. SST
-    5. SKY
+    5. SKY ☑️ fall2025
     6. TBSW
     7. AFT ☑️ spring2026
     8. FAB
@@ -32,6 +32,9 @@
 
 ### Weeks & Contents Table
 - 
+
+## Notes
+- docs.google.com/document/d/1fCXCkMWtRH7VUqd3TE5mJ85TGFRcczJpqb1V82AjkME
 
 ## BRACU Videos
 - MAT110 [MZK]: https://drive.google.com/drive/folders/1no7z0nopmtzFg2RPInQh2t-AgbXtzZ_n
