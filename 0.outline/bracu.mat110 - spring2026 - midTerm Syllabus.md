@@ -1,0 +1,15 @@
+## MidTerm Syllabus of mat110 [by Akram Hosen] [SingleVariable]
+- Function, Introduction to Limits, 
+    - Limits of indeterminate forms using L’ Hopital’s rule, 
+    - Horizontal and vertical asymptotes, Squeeze Theorem.
+- Introduction to continuity and differentiability.
+- Techniques of Differentiation.
+    - Chain Rule, Product/Quotient Rule
+    - Implicit Differentiation
+    - Differentiating Inverse Trigonometric Functions
+    - Parametric Differentiation
+    - Successive Differentiation / Higher-Order Differentiation / Generalising The n-th Derivative
+    - Leibnit'z Theorem
+- Increasing and Decreasing, Concavity, Maxima-Minima (Extrema).
+- Taylor and Maclaurin polynomials for single variable functions
+- (MVT-RT) Rolle’s Theorem & Mean-Value Theorem.

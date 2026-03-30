@@ -8,36 +8,18 @@
 <div class="REY_ACADEMIA1">
 
 ### TODO
-- MZK Youtube Upload & Add Links Here
-- All Teachers List from This Semester, Contacting them, and asking for Lecture Notes
-    1. ALS 
-    2. ALS ☑️ spring2026
-    3. SSBN 
-    4. SST
-    5. SKY ☑️ fall2025
-    6. TBSW
-    7. AFT ☑️ spring2026
-    8. FAB
-    9.  AMR
-    10. MFA 🟥 evil mf
-    11. RMH ☑️ fall2025
-    12. SDH
-    13. SAN
-    14. SAN
-    15. AMR
-    16. FAB
-    17. AMR
-    18. DLI
-    19. SHD ☑️ spring2026
+- Save Formatted MIT 18.01 Session Notes
 
-### Weeks & Contents Table
-- 
-
-## Notes
-- docs.google.com/document/d/1fCXCkMWtRH7VUqd3TE5mJ85TGFRcczJpqb1V82AjkME
+## Drive & Doc Links
+- [SKY] docs.google.com/document/d/1fCXCkMWtRH7VUqd3TE5mJ85TGFRcczJpqb1V82AjkME
+- [MZK] drive.google.com/drive/folders/1no7z0nopmtzFg2RPInQh2t-AgbXtzZ_n
+- [AFT] Google ClassRoom: `o4v3rns6`
+- https://www.facebook.com/share/p/1DcCXEGMhz/
 
 ## BRACU Videos
-- MAT110 [MZK]: https://drive.google.com/drive/folders/1no7z0nopmtzFg2RPInQh2t-AgbXtzZ_n
+- MAT110 [MZK]: 
+    - https://drive.google.com/drive/folders/1no7z0nopmtzFg2RPInQh2t-AgbXtzZ_n
+    - https://www.youtube.com/playlist?list=PLR0j6NckpKjxZZibPpiGfx9GHUPniU0U2
 - BuX: 
     - Uploaded by a Student: https://www.youtube.com/playlist?list=PL9aZtK5kh5Wf2ivvurpQ-2zi6kgWGMGo0
     - Unlisted BuX Videos: https://www.youtube.com/playlist?list=PLp0u7sBYOn7Vzrr5wXD5iD95-Q-7ieUKm
@@ -51,7 +33,7 @@
     - https://www.youtube.com/watch?v=dNwRwmgXgVA&t=3694s
 
 ## SingleVAR: Recommended Resources
-- 
+1. Limits & Continuity: https://www.youtube.com/playlist?list=PLlwePzQY_wW8P_I8BFgm0-upywEwTKd8_ 
 
 ## MultiVAR: Recommended Resources
 - 
@@ -61,5 +43,28 @@
 
 ## Conics: Recommended Resources
 - 
+
+## Faculty CheckBoxes
+- Teacher Initials: https://hackmd.io/@oddvoot/bracu_jan2026
+- All Teachers List from This Semester, Contacting them, and asking for Lecture Notes
+    1. ALS ☑️ spring2026
+    2. ALS ☑️ spring2026
+    3. SSBN 
+    4. SST
+    5. SKY ☑️ fall2025
+    6. TBSW
+    7. AFT ☑️ spring2026
+    8. FAB ☑️ spring2026
+    9.  AMR ☑️ fall2025
+    10. MFA 🟥 evil mf
+    11. RMH ☑️ fall2025
+    12. SDH
+    13. SAN
+    14. SAN
+    15. AMR ☑️ fall2025
+    16. FAB ☑️ spring2026
+    17. AMR ☑️ fall2025
+    18. DLI ☑️ spring2026
+    19. SHD ☑️ spring2026
 
 </div>
