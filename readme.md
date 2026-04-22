@@ -3,12 +3,12 @@
 
 
 
-
-
 <div class="REY_ACADEMIA1">
 
 ### TODO
 - Save Formatted MIT 18.01 Session Notes
+- REYNEP's Notes on Calculus
+- Learn MultiVariable Calculus
 
 ## Drive & Doc Links
 - [SKY] docs.google.com/document/d/1fCXCkMWtRH7VUqd3TE5mJ85TGFRcczJpqb1V82AjkME
@@ -49,16 +49,16 @@
 - All Teachers List from This Semester, Contacting them, and asking for Lecture Notes
     1. ALS ☑️ spring2026
     2. ALS ☑️ spring2026
-    3. SSBN 
+    3. SSBN 🟥 denied
     4. SST
     5. SKY ☑️ fall2025
-    6. TBSW
+    6. TBSW/TBW ☑️ spring2026
     7. AFT ☑️ spring2026
     8. FAB ☑️ spring2026
     9.  AMR ☑️ fall2025
     10. MFA 🟥 evil mf
     11. RMH ☑️ fall2025
-    12. SDH
+    12. SDH 
     13. SAN
     14. SAN
     15. AMR ☑️ fall2025
@@ -66,5 +66,6 @@
     17. AMR ☑️ fall2025
     18. DLI ☑️ spring2026
     19. SHD ☑️ spring2026
+    20. MZK ☑️ fall2025
 
 </div>
