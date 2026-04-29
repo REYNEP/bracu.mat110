@@ -103,7 +103,7 @@
 - $abs(x)$
   #REY.fix_list_item[Basic Definition of Absolute Value: $|x| = display(cases(REY.case(x, x>=0), REY.case(-x, x<0)))$]
   - $sqrt(x^2) = |x|$           #v(0.5em)
-  - $REY.e(-|x|, 2)$
+  - $REY.e(-|x|, 2)$            #h(2em) (graph this)
 - Anton -- Chapter 0 -- Page 8: "The Effect of Algebraic Operations on the Domain"
 #v(1em)
 
@@ -193,7 +193,7 @@
       REY.rinf((     (6-x^3) / (7t^3+3)    )) = REY.rinf(-x^3, 7x^3) = (-1)/7,
       REY.linf(     (x+4x^3) / (1-x^2+7x^3) ) = REY.linf(4x^3, 7x^3) = (-4)/(-7),
 
-      REY.rinf(root(3, (3x+5) / (6x-8)))        = root(3, REY.rinf(3x, 6x))     = root(3, 3/6),
+      REY.rinf(root(3,      (3x+5) / (6x-8)  )) = root(3, REY.rinf(3x, 6x))     = root(3, 3/6),
       REY.rinf(root(3, (3x^7-4x^5) / (2x^7+1))) = root(3, REY.rinf(3x^7, 2x^7)) = root(3, 3/2),
     )$
     #v(2.5em)
@@ -220,10 +220,130 @@
 
   - Type III #parbreak()
     $REY.utd(
-      REY.rinf(7-6x^5, x+3) = REY.rinf(-6x^5, x) = REY.rinf((-6) dot x^4/1) = (-6) dot (+infinity)^4/1 = (-6) dot infinity/1 = -infinity,
-      REY.linf(7-6x^5, x+3) = REY.linf(-6x^5, x) = REY.linf((-6) dot x^4/1) = (-6) dot (-infinity)^4/1 = (-6) dot infinity/1 = -infinity,
+      REY.rinf(7-6x^5, x+3, REY.purple)   = REY.rinf(-6x^5, x) = REY.rinf((-6) dot x^4/1) = (-6) dot (+infinity)^4/1 = (-6) dot   infinity /1 = -infinity,
+      REY.linf(7-6x^5, x+3, REY.purple)   = REY.linf(-6x^5, x) = REY.linf((-6) dot x^4/1) = (-6) dot (-infinity)^4/1 = (-6) dot   infinity /1 = -infinity,
+      #v(0.5em),
+      REY.linf(7-6x^#REY.tPurple(4), x+3) = REY.linf(-6x^4, x) = REY.linf((-6) dot x^3/1) = (-6) dot (-infinity)^3/1 = (-6) dot (-infinity)/1 = +infinity,
     )$  
     #v(2.5em)
 
-  - Type IV #parbreak()
-    
+  - Anton -- Chapter 1.3 -- Page 93: "A Quick method for finding limits of ..."
+  - Anton -- Chapter 1.3 -- Exercises 09-24
+  - Exercises #parbreak()
+    $
+      REY.ltr(
+        REY.linf(3, x+4),
+        REY.rinf(1, x-12),
+        REY.linf(x-2, x^2+2x+1),
+        REY.rinf(6-x^3, 7x^3+3),
+        REY.linf(x+4x^3, 1-x^2+7x^3)
+      )
+    $
+    #v(2.5em)
+
+#pagebreak()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#show: REY.REY_SHOW_fixPlus
+
+5. *$limits(lim)_(x->infinity)$* #parbreak()
+  - Type IV -- #REY.tPurple[Divide by $|x|$] #parbreak()
+    - Anton -- Chapter 1.3 -- Page 94: "Limits Involving Radicals" 
+      $
+        #let n1 = $sqrt(x^2+2)$
+        #let d1 = $3x-6$
+        #let f1 = REY.f1
+        #let whyABS = $wide       because abs(x) = sqrt(x^2)      wide #[and] wide        because |x| = display(cases(REY.case(x, x>=0), REY.case(-x, x<0)))$
+
+        REY.utd(
+          REY.rinf(n1, d1)  = REY.rinf(f1(n1, |x|),       f1(d1, |x|)) 
+                            = REY.rinf(f1(n1, sqrt(x^2)), f1(d1, +x)) whyABS,
+          #v(0.5em),
+          REY.linf(n1, d1)  = REY.linf(f1(n1, |x|),       f1(d1, |x|)) 
+                            = REY.linf(f1(n1, sqrt(x^2)), f1(d1, -x)) whyABS
+        )
+      $
+      #v(2.5em)
+
+    - Anton -- Chapter 1.3 -- Exercises 25-30
+    - Quick Method #parbreak() #v(0.5em) #h(1em)
+      $REY.utd(
+        REY.ltr(
+          REY.linf(sqrt(5x^2)-2, x+3) = REY.linf(sqrt(5x^2), x)  = sqrt(5)/(-1),,,
+          REY.rinf(sqrt(5x^2)-2, x+3) = REY.rinf(sqrt(5x^2), x)  = sqrt(5)/(+1),
+        ),
+        #v(0.0em),
+        REY.linf(2-x, sqrt(7+6x^2))   = REY.linf(-x, sqrt(6x^2)) = (-(-1))/sqrt(6),
+        #v(0.0em),
+        REY.linf(sqrt(3x^4)+x, x^2-8) = REY.linf(sqrt(3x^4), x^2) = sqrt(3)/1,
+      )$  
+      #v(2.5em)
+
+
+  - Type V: #REY.tPurple[Multiply by Conjugate] #v(-0.5em)
+    $
+      REY.ltr(
+        REY.rinf(sqrt(x^6+5)    - x^3),
+        REY.rinf(sqrt(x^6+5x^3) - x^3),
+      )
+    $
+    #v(1.0em)
+  - Anton -- Chapter 1.3 -- Exercises 31-32 [Conjugate]
+    $
+      REY.ltr(
+        REY.rinf(sqrt(x^2+3)  - x),
+        REY.rinf(sqrt(x^2-3x) - x),
+      )
+    $
+    #v(2.5em)
+
+  - Type VI 
+    - Anton -- Chapter 1.3 -- Page 95: "End behavior of Trigonometric, Exponential, and Logarithmic Funcs"
+    - Anton -- Chapter 1.3 -- Exercises 33-36 -- Divide by $e^x$ #parbreak() 
+      $ REY.linf(1-e^x, 1+e^x) $
+      #v(1.0em)
+    - Anton -- Chapter 1.3 -- Exercises 37-38 -- $ln()$ #parbreak()
+      $
+        REY.ltr(
+          REY.rinf(      thick ln(2/x^2)),,
+          limits(lim)_(x -> 0^+) thick ln(2/x^2),
+        )
+      $
+
+
+
+
+
+
+
+
+
+
+#pagebreak()
+
+6. *Squeeze Theorem / SandWich Theorem*  #parbreak()
+  $
+    REY.utdL(
+      limits(lim)_(h->0) REY.t3 sin(h)/h = 1,
+      limits(lim)_(h->0) REY.t3 quad cos(1/h) = #[range[-1, 1] = D.N.E.],
+      limits(lim)_(h->0) REY.t2 h dot cos(1/h) = 0,
+      limits(lim)_(h->0) REY.t2 h dot sin(1/h) = 0,,
+      & limits(lim)_(h->0) (cos(h)-1)/h &= limits(lim)_(h->0)                 (cos(h) -1)  /h dot (cos(h)+1)/(cos(h)+1),
+      &                                 &= limits(lim)_(h->0) (REY.tPurple(  cos^2(h))-1^2)/h dot          1/(cos(h)+1),
+      &                                 &= limits(lim)_(h->0) (REY.tPurple(1-sin^2(h))-1^2)/h dot          1/(cos(h)+1),
+      &                                 &= limits(lim)_(h->0)              (-sin^2(h))     /h dot          1/(cos(h)+1),
+      &                                 &= limits(lim)_(h->0)              ( sin  (h))     /h dot     -sin(h)/(cos(h)+1)
+    )
+  $

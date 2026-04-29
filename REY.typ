@@ -4,6 +4,25 @@
 
 #show math.frac: set text(size: 1em)          // Use this if you wanna increase fraction text size
 
+#let REY_SHOW_fixPlus(body) = {
+  // Target the specific math symbols
+  show math.plus:  it => move(dy: -0.05em, dx: 0.05em, scale(75%, it))
+  show math.minus: it => move(dy: -0.05em, dx: 0.00em, scale(75%, it))
+  
+  body
+}
+
+#let fixer = 1.44;
+#let  lvl1(body)  = text(size: 1em*fixer*0.9, body)
+#let   f1(..args) = {
+  let pos = args.pos();
+       if pos.len() == 1 {$ lvl1(    #pos.at(0)   ) $} 
+  else if pos.len() == 2 {$ lvl1(   (#pos.at(0) / #pos.at(1))   ) $}
+  else if pos.len() == 3 {$ lvl1(   (#pos.at(0) / #pos.at(1))   ) $}
+}
+
+#let t3           = $thick thick thick$
+#let t2           = $thick thick$
 #let big(body)    = text(size: 1.44em, body)
 #let e(x,y)       = big[$e^frac(#x, #y)$]
 #let case(a,x)    = $#a\, quad & #x$
@@ -11,14 +30,16 @@
                                               // display() doesn't maintain vertical line-height based gaps properly
 #let rinf(..args) = {
   let pos = args.pos()
-       if pos.len() == 1 {$ limits(lim)_(x -> +infinity)  #pos.at(0) $} 
-  else if pos.len() == 2 {$ limits(lim)_(x -> +infinity) (#pos.at(0)) / (#pos.at(1)) $}
+       if pos.len() == 1 {$ limits(lim)_(x ->                        +infinity)   #pos.at(0) $} 
+  else if pos.len() == 2 {$ limits(lim)_(x ->                        +infinity)  (#pos.at(0)) / (#pos.at(1)) $}
+  else if pos.len() == 3 {$ limits(lim)_(x -> text(fill: #pos.at(2), +infinity)) (#pos.at(0)) / (#pos.at(1)) $}
 }
 
 #let linf(..args) = {
   let pos = args.pos()
-       if pos.len() == 1 {$ limits(lim)_(x -> -infinity)  #pos.at(0) $} 
-  else if pos.len() == 2 {$ limits(lim)_(x -> -infinity) (#pos.at(0)) / (#pos.at(1)) $}
+       if pos.len() == 1 {$ limits(lim)_(x ->                        -infinity)   #pos.at(0) $} 
+  else if pos.len() == 2 {$ limits(lim)_(x ->                        -infinity)  (#pos.at(0)) / (#pos.at(1)) $}
+  else if pos.len() == 3 {$ limits(lim)_(x -> text(fill: #pos.at(2), -infinity)) (#pos.at(0)) / (#pos.at(1)) $}
 }
 
 
@@ -42,6 +63,10 @@
 
 #let utd(..eqs) = {
   eqs.pos().map(item => box[$ #item $]).join( linebreak() )
+}
+
+#let utdL(..eqs) = {
+  eqs.pos().map(item => $ & #item $).join(linebreak())
 }
 
 #let col(..args) = {
@@ -128,7 +153,7 @@
 #let gold   = retroGold
 #let peach  = retroPeach
 #let rust   = retroRust
-#let purple = rgb("#9809ff")
+#let purple = rgb("#7c00d5")
 
 #let tCream(x)    = text(fill: cream)[#x]
 #let tNavy(x)     = text(fill: navy)[#x]
