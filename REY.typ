@@ -1,6 +1,8 @@
 
 
-
+/*
+ Math.functions
+*/
 
 #show math.frac: set text(size: 1em)          // Use this if you wanna increase fraction text size
 
@@ -205,3 +207,38 @@
     }
   )
 )
+
+
+
+
+
+
+/**
+ * Logistics - Fix List
+ */ 
+
+// Level 1: Standard
+#show list: set text()
+
+// Level 2: List inside a list
+#show list: it => {
+  show list: set text()
+  show list: set list(tight: true, spacing: 0.65em)   // Loose-Lists will now be Tight-List
+  it
+}
+
+// Level 3: List inside a list inside a list
+#show list: it => {
+  show list: it => {
+    show list: set text()
+    it
+  }
+  it
+}
+
+#let _m1 = "•";
+#let _m2 = "◦";
+#let _m3 = move(dy: 0.1em, text(0.7em)["▪"]);
+
+#set list(tight: true, spacing: 0.65em)   // Loose-Lists will now be Tight-List
+#set list(marker: (_m1, _m2, _m3))

@@ -1,0 +1,3 @@
+https://mathinsight.org/spherical_coordinates?authuser=8
+
+https://math.libretexts.org/Courses/Georgia_State_University_-_Perimeter_College/MATH_2215%3A_Calculus_III/12%3A_Vectors_and_the_Geometry_of_Space/Cylindrical_and_Spherical_Coordinates?authuser=8
